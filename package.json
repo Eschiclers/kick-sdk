@@ -1,0 +1,66 @@
+{
+	"name": "kick-sdk",
+	"version": "0.0.2",
+	"description": "NodeJS library for Kick API.",
+	"homepage": "https://github.com/Eschiclers/kick-sdk#readme",
+	"bugs": {
+		"url": "https://github.com/Eschiclers/kick-sdk/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Eschiclers/kick-sdk.git"
+	},
+	"license": "MIT",
+	"author": "Chicle <hola@chicle.dev> (https://chicle.dev/)",
+	"keywords": [
+		"kick",
+		"kick-sdk",
+		"kick-api",
+		"kick-wrapper",
+		"kick-client",
+		"kick-streaming",
+		"kick-integration",
+		"api",
+		"sdk",
+		"streaming",
+		"live-streaming",
+		"kick-developer",
+		"kick-bot",
+		"kick-js",
+		"kick-tools",
+		"kick-api-client",
+		"javascript",
+		"typescript",
+		"nodejs"
+	],
+	"type": "module",
+	"main": "dist/main.js",
+	"types": "dist/main.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/main.js",
+			"types": "./dist/main.d.ts"
+		}
+	},
+	"files": [
+		"dist/"
+	],
+	"scripts": {
+		"build": "tsc",
+		"clean": "rimraf dist",
+		"prepare": "npm run clean && npm run build",
+		"lint": "eslint src --ext .ts",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.21.0",
+		"@types/node": "^22.13.5",
+		"@typescript-eslint/eslint-plugin": "^8.25.0",
+		"@typescript-eslint/parser": "^8.25.0",
+		"eslint": "^9.21.0",
+		"globals": "^16.0.0",
+		"rimraf": "^6.0.1",
+		"typescript": "^5.7.3",
+		"typescript-eslint": "^8.25.0"
+	}
+}

@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Development files
+src/
+.eslintrc.js
+eslint.config.js
+tsconfig.json
+
+# Configuration and unnecessary metadata
+.editorconfig
+.gitignore
+.npmignore
+
+# Generated files
+package-lock.json
