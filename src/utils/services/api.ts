@@ -1,4 +1,3 @@
-import { IApiResponse } from '../interfaces/apiResponse'
 import { EApiEndpoint } from '../models/enumerations/apiEndpoint'
 
 const BASE_URL = 'https://api.kick.com'
@@ -13,7 +12,7 @@ export const api = async <T>(url: EApiEndpoint | string, token: string, options:
 	const response = await fetch(`${BASE_URL}${url}`, {
 		...options,
 		headers,
-	}) as Response & IApiResponse<T>
+	})
 
-	return response.data
+	return await response.json()
 }
