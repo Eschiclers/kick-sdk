@@ -10,5 +10,8 @@ export enum EApiEndpoint {
 	GET_USERS = '/public/v1/users',
 
 	// Channels
-	GET_CHANNELS = '/public/v1/channels'
+	GET_CHANNELS = '/public/v1/channels',
+
+	// Chat
+	SEND_CHAT_MESSAGE = '/public/v1/chat'
 }

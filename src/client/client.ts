@@ -8,6 +8,8 @@ import { IUserService } from '../user/interfaces/userService'
 import { UserService } from '../user/user'
 import { IChannelService } from '../channel/interfaces/channelService'
 import { ChannelService } from '../channel/channel'
+import { IChatService } from '../chat/interfaces/chatService'
+import { ChatService } from '../chat/chat'
 
 export class KickClient implements IKickClient {
 	private token: string
@@ -15,6 +17,7 @@ export class KickClient implements IKickClient {
 	readonly category: ICategoryService
 	readonly user: IUserService
 	readonly channel: IChannelService
+	readonly chat: IChatService
 
 	constructor(options: IKickClientOptions) {
 		this.token = options.token
@@ -22,6 +25,7 @@ export class KickClient implements IKickClient {
 		this.category = new CategoryService(this)
 		this.user = new UserService(this)
 		this.channel = new ChannelService(this)
+		this.chat = new ChatService(this)
 	}
 
 	getToken = (): string => this.token
