@@ -1,7 +1,7 @@
 {
 	"name": "kick-sdk",
-	"version": "0.0.2",
-	"description": "NodeJS library for Kick API.",
+	"version": "0.0.3",
+	"description": "NodeJS lightweight SDK for Kick.com API.",
 	"homepage": "https://github.com/Eschiclers/kick-sdk#readme",
 	"bugs": {
 		"url": "https://github.com/Eschiclers/kick-sdk/issues"
@@ -14,6 +14,7 @@
 	"author": "Chicle <hola@chicle.dev> (https://chicle.dev/)",
 	"keywords": [
 		"kick",
+		"kick.com",
 		"kick-sdk",
 		"kick-api",
 		"kick-wrapper",
@@ -27,6 +28,8 @@
 		"kick-developer",
 		"kick-bot",
 		"kick-js",
+		"kickjs",
+		"kick.js",
 		"kick-tools",
 		"kick-api-client",
 		"javascript",
