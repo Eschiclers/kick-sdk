@@ -16,6 +16,6 @@ export class CategoryService implements ICategoryService {
 	}
 
 	async getCategoryById(id: number): Promise<IApiResponseGetCategory> {
-		return await api<IApiResponseGetCategory>(`${EApiEndpoint.GET_CATEGORY_BY_ID}${id}`, this.client.getToken())
+		return await api<IApiResponseGetCategory>(`${EApiEndpoint.GET_CATEGORIES}/${id}`, this.client.getToken())
 	}
 }
