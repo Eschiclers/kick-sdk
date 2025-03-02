@@ -2,7 +2,7 @@ import { IKickClient } from '../client/interfaces/kickClient'
 import { EApiEndpoint } from '../utils/models/enumerations/apiEndpoint'
 import { api } from '../utils/services/api'
 import { ICategoryService } from './interfaces/categoryService'
-import { IApiResponseGetCategory } from './interfaces/response/apiResponseGetCategories'
+import { IApiResponseGetCategory } from './interfaces/response/apiResponseGetCategory'
 
 export class CategoryService implements ICategoryService {
 	private readonly client: IKickClient

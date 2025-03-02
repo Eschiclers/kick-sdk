@@ -1,4 +1,4 @@
-import { IApiResponseGetCategory } from './response/apiResponseGetCategories'
+import { IApiResponseGetCategory } from './response/apiResponseGetCategory'
 
 export interface ICategoryService {
 	getCategories(): Promise<IApiResponseGetCategory[]>,
